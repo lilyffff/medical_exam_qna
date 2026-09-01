@@ -385,3 +385,9 @@ rag_embeddings.meta.json
 ### 문서 기록 규칙
 
 앞으로 코드 업데이트가 SQLite 테이블, FTS 검색, 인덱스 파일 또는 경로에 영향을 주면 `업데이트 NNN. 제목` 형식으로 기록합니다. SQLite 영향이 없는 변경도 같은 번호로 `영향 없음`을 남깁니다.
+
+## 업데이트 002. 실제 사용 환경변수만 유지
+
+`.env.example`에서 사용하지 않는 설정을 제거하고 현재 MediKo 모델 값을 반영했습니다. SQLite 테이블 구조와 `rag_index.sqlite3` 내용에는 변경이 없습니다.
+
+SQLite 관련 환경변수인 `MEDICAL_KNOWLEDGE_PATH`, `RAG_INDEX_PATH`, 임베딩 파일 경로와 검색 설정은 모두 실제 코드에서 사용하므로 그대로 유지했습니다. 따라서 기존 로컬 DB와 임베딩 인덱스를 다시 만들 필요가 없습니다.
