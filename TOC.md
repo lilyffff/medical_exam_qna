@@ -1,0 +1,54 @@
+## 의료국가시험 Q and A 챗봇 목차
+
+- [0. 교재 사용 안내](pages/00-guide.md)
+  - 프로젝트 목표와 완성 결과
+  - 학습 순서와 데이터 사용 원칙
+- [1. LLM과 의료 Q&A 핵심 개념](pages/01-llm-concepts.md)
+  - LLM, 토큰, Qwen, 추론
+  - 파인튜닝, LoRA, QLoRA
+  - 학습·검증·시험 데이터
+- [2. Google Colab 환경 준비](pages/02-colab-setup.md)
+  - GPU 런타임 설정
+  - 라이브러리 설치와 버전 확인
+  - Google Drive 연결
+- [3. KorMedMCQA 4개 직종 불러오기](pages/03-load-data.md)
+  - 의사·간호사·약사·치과의사 구성
+  - DatasetDict와 데이터 열
+  - 분할별 문제 수 확인
+- [4. 데이터 탐색과 품질 점검](pages/04-explore-data.md)
+  - 문제와 정답 선택지 확인
+  - 결측값·정답 범위·중복 검사
+  - 직종별 데이터 통합
+- [5. 기본 Qwen으로 기준 성능 확인](pages/05-baseline.md)
+  - 모델과 토크나이저 불러오기
+  - 객관식 프롬프트 만들기
+  - Few-shot과 Zero-shot 비교
+- [6. Chat Template과 SFT 데이터 만들기](pages/06-chat-template.md)
+  - System·User·Assistant 역할
+  - 정답 번호와 정답 문장 구성
+  - 학습용 text 열 생성
+- [7. QLoRA로 Qwen 파인튜닝](pages/07-qlora-training.md)
+  - 4비트 양자화
+  - LoRA 설정
+  - SFTTrainer 학습과 어댑터 저장
+- [8. 학습 모델로 답변 생성](pages/08-inference.md)
+  - 어댑터 다시 불러오기
+  - 답변 생성 함수
+  - 정답 번호 안전하게 추출하기
+- [9. 네 직종 모델 평가](pages/09-evaluation.md)
+  - Test 데이터 보호
+  - 직종별 정확도 계산
+  - 오답 사례 분석
+- [10. Gradio Q&A 챗봇 만들기](pages/10-gradio-chatbot.md)
+  - 직종 선택과 질문 입력
+  - 모델 답변과 안전문구 표시
+  - Colab 공유 링크 실행
+- [11. 모델 저장과 Hugging Face 공유](pages/11-save-share.md)
+  - Drive에 LoRA 어댑터 저장
+  - Hugging Face 토큰 보호
+  - 모델 카드와 비공개 업로드
+- [12. 의료 AI 윤리·한계·문제 해결](pages/12-safety-troubleshooting.md)
+  - 교육용 서비스의 범위
+  - 환각·데이터 누수·저작권
+  - Colab 오류 해결 체크리스트
+

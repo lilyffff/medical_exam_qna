@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.py[cod]
+rag_index.sqlite3
+rag_embeddings.npy
+rag_embedding_ids.npy
+rag_embeddings.meta.json
+rag_embeddings.building.npy
+rag_embedding_ids.building.npy
+rag_embeddings.meta.json.building
+medical_knowledge_data/
+08.전문 의학지식 데이터/
